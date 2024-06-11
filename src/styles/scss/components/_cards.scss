@@ -1,0 +1,57 @@
+.cards {
+  &__container {
+    height: 100vh;
+  }
+
+  button,
+  a {
+    cursor: pointer;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--img {
+      position: relative;
+      img {
+        height: 15rem;
+        width: 15rem;
+        object-fit: cover;
+      }
+
+      p {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__delete {
+        padding: 4px 8px;
+        border: none;
+        background-color: red;
+        color: white;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 150px;
+    left: 47.6%;
+    a {
+      text-decoration: none;
+      color: green;
+    }
+  }
+}

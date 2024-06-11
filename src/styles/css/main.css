@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.responsive-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.status-online {
+  color: green;
+}
+
+.status-offline {
+  color: red;
+}
+
+.cards__container {
+  height: 100vh;
+}
+.cards button,
+.cards a {
+  cursor: pointer;
+}
+.cards__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards__card--img {
+  position: relative;
+}
+.cards__card--img img {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}
+.cards__card--img p {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cards__card--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards__card--content__delete {
+  padding: 4px 8px;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 0.5rem;
+}
+.cards__btn {
+  position: absolute;
+  top: 150px;
+  left: 47.6%;
+}
+.cards__btn a {
+  text-decoration: none;
+  color: green;
+}
+
+.panel {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.panel__form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.panel__form form input {
+  width: 40rem;
+  padding: 8px 16px;
+  border: 1px solid #e3e3e3;
+  border-radius: 0.5rem;
+}
+.panel__form form select {
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
