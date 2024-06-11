@@ -1,3 +1,5 @@
+@use "../utils" as *;
+
 .cards {
   &__container {
     height: 100vh;
@@ -8,10 +10,9 @@
     height: 100px;
     width: 100%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    @include flexible($direction: column, $align: center, $justify: center);
+
     color: green;
     text-decoration: none;
     padding: 8px 16px;
@@ -28,10 +29,7 @@
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexible($direction: column, $justify: center, $align: center);
 
     width: 100%;
 
@@ -57,10 +55,8 @@
     }
 
     &--content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flexible($direction: column, $justify: center, $align: center);
+
       p {
         color: gray;
       }

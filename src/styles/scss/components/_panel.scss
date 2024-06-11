@@ -1,9 +1,9 @@
+@use "../utils/" as *;
 .panel {
   height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @include flexible($justify: center, $align: center);
 
   a {
     text-decoration: none;
@@ -11,17 +11,15 @@
   }
 
   &__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexible($justify: center, $align: center, $direction: column);
 
     form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 0.5rem;
+      @include flexible(
+        $justify: center,
+        $align: center,
+        $direction: column,
+        $gap: 0.5rem
+      );
 
       input {
         width: 40rem;
