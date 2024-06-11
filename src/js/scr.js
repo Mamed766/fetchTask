@@ -25,7 +25,7 @@ const DeleteApiDataById = async (endPoint, id) => {
 };
 
 getApiDataWithCallBack("data", (data) => {
-  data.map((item, index) => {
+  data.map((item) => {
     const statusClass =
       item.status === "online" ? "status-online" : "status-offline";
 
@@ -80,7 +80,7 @@ CREATE__USER &&
     try {
       const response = await PostApiData("data", userData);
       console.log("User created successfully:", response);
-      //   window.location.href = "index.html";
+      window.location.href = "index.html";
     } catch (error) {
       console.error("Error creating user:", error);
     }
